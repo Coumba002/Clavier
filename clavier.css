@@ -1,0 +1,110 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(53, 4, 95);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+.clavier {
+    list-style-type: none;
+    color: rgb(161, 161, 251);
+    background-image: linear-gradient(rgb(41, 18, 27),rgb(0, 51, 51),rgb(46, 15, 75));
+    border: 1px solid rgb(194, 103, 255);
+    box-shadow: -4px -4px 8px rgb(240, 236, 237),4px 4px 8px rgb(234, 154, 185);
+    width: 800px;
+    border-radius: 15px;
+    height: 510px;
+    
+   
+}
+
+
+.clavier .text{
+    position: relative;
+    font-size: 18px;
+    font-family: inherit;
+    border-radius: 15px;
+   
+    height: 200px;
+    padding: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 2px inset rgb(14, 97, 56);
+    white-space: pre-wrap;
+    box-shadow: inset 2px 2px 5px rgb(26, 6, 44), inset -2px -2px 2px rgb(112, 97, 101);
+    box-sizing: border-box;
+    width: 785px;
+    margin-right: 8px; 
+    margin-left: 7px;
+    height: 150px;
+    padding: 10px;
+
+}
+.clavier2{
+    border: 15px;
+    color: rgb(238, 240, 163);
+    /* border: 1px solid green; */
+    border-width: 5px;
+    padding: 10px;
+    padding-block: 24px;
+} 
+.clavier2 li:hover{
+    color: rgb(242, 30, 210);
+    box-shadow: 0 4px 8px rgba(220, 247, 110, 0.2);
+    border: solid 1px rgb(18, 18, 17); 
+    transition: all 0.2s ease-in-out; /* Animation de la souris */
+    transform: translateY(-4px);/*faire un effet de rebond sur le bouton */
+    cursor: pointer;/*pour faire un effet de main sur le bouton */
+    background-color: rgb(220, 204, 204);   
+}
+.clavier2 li{
+    box-shadow: -4px -4px 4px rgb(73, 36, 115),4px 4px 8px rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid rgb(212, 202, 202); */
+    border-radius: 8px;
+    place-content: center;
+    padding: 10px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.uppercase li{
+    text-transform: uppercase;
+
+}
+.clavier2 .key .espace{
+    height: 40px;
+    border-radius: 8px;
+    place-content: center;
+    padding: 10px;
+    width: calc(18px*9.4);
+}
+
+ul li{
+    display: flex;
+}
+.clavier ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.key li {
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .key li.pressed {
+    transform: scale(0.95);
+    background-color: #ddd;
+    box-shadow: inset 0 0 5px #aaa;
+  }
+  
+    
+   
+
